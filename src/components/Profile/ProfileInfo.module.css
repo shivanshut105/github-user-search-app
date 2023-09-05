@@ -1,0 +1,30 @@
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 2rem;
+    /* padding: 2em; */
+}
+
+.bioData{
+    display: flex;
+    flex-direction: column;
+}
+
+.bioData h2{
+    margin: 0;
+}
+
+.date{
+    font-size: 0.8em;
+    padding: 1em 2em;
+}
+
+#username{
+    color: #1a72d6;
+}
+
+#bio{
+    margin-top: .8rem;
+    font-size: 0.8em;
+}

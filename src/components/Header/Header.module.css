@@ -1,0 +1,55 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 1rem;
+}
+
+.ButtonLight{
+    font-style: inherit;
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.ButtonLight:hover{
+    color: gray;
+}
+
+.ButtonDark{
+    font-style: inherit;
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: grey;
+    font-weight: bold;
+}
+
+.ButtonLight span{
+    margin-right: 1rem;
+    letter-spacing: .2rem;
+}
+
+.ButtonDark span{
+    margin-right: 1rem;
+    letter-spacing: .2rem;
+}
+
+.ButtonDark:hover{
+    color: black;
+}
+
+

@@ -1,0 +1,23 @@
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+    font-size: .8em;
+    margin: 2em 0;
+}
+
+.miniWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cell{
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.icon{
+    height: 16px;
+    margin-right: 0.5em;
+}

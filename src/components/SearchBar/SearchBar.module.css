@@ -1,0 +1,12 @@
+.container{
+    background-color: #1E2A47;
+    border-radius: 0.8em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em;
+}
+
+.container img{
+    height: 23px;
+}
