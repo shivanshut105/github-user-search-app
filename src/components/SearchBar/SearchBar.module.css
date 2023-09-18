@@ -10,3 +10,25 @@
 .container img{
     height: 23px;
 }
+
+.container input{
+    width: 80%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1.1em;
+    color: white;
+    font-family: inherit;
+}
+
+.Button{
+    border: none;
+    font-family: 'Space Mono', monospace;
+    color: white;
+    background-color: #0079FF;
+    border-radius: 0.6rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    font-size: 1.05em;
+    cursor: pointer;
+}

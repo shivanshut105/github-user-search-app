@@ -1,30 +1,37 @@
-import twitterSvg from '../../assets/images/icon-twitter.svg';
-import locationSvg from '../../assets/images/icon-location.svg';
-import companySvg from '../../assets/images/icon-company.svg';
-import websiteSvg from '../../assets/images/icon-website.svg';
+import {ReactComponent as TwitterSvg} from '../../assets/icons/x-twitter.svg';
+import {ReactComponent as LocationSvg} from '../../assets/icons/icon-location.svg';
+import {ReactComponent as CompanySvg} from '../../assets/icons/icon-company.svg';
+import {ReactComponent as WebsiteSvg} from '../../assets/icons/icon-website.svg';
 import classes from './Stats.module.css';
 
-const Stats = () => {
+const Stats = (props) => {
+    const notAvailableHandler = (value)=>{
+        if(value) return <span>{value}</span>;
+        else{
+            return <span style={{color: 'gray'}}>N/A</span>
+        }
+    }
+    const user = props.userData;
     return (
         <div className={classes.wrapper}>
-            <div className={classes.miniWrapper}>
+            <div className={classes.miniWrapper1}>
                 <div className={classes.cell}>
-                    <img src={locationSvg} className={classes.icon} alt="location-icon" />
-                    <span>San Francisco</span>
+                    <LocationSvg className={classes.icon} />
+                    {notAvailableHandler(user.location)}
                 </div>
                 <div className={classes.cell}>
-                    <img src={websiteSvg} className={classes.icon} alt="website-icon" />
-                    <span>linlkfsalm.com</span>
+                    <WebsiteSvg className={classes.icon} />
+                    {notAvailableHandler(user.blog)}
                 </div>
             </div>
-            <div className={classes.miniWrapper}>
+            <div className={classes.miniWrapper2}>
                 <div className={classes.cell}>
-                    <img src={twitterSvg} className={classes.icon} alt="twitter-icon" />
-                    <span>twitter</span>
+                    <TwitterSvg className={classes.icon}  />
+                    {notAvailableHandler(user.twitter_username)}
                 </div>
                 <div className={classes.cell}>
-                    <img src={companySvg} className={classes.icon} alt="company-icon" />
-                    <span>Organisation name</span>
+                    <CompanySvg className={classes.icon} />
+                    {notAvailableHandler(user.company)}
                 </div>
             </div>
         </div>

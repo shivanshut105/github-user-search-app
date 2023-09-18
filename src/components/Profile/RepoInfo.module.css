@@ -1,10 +1,11 @@
 .wrapper{
+    width: 80%;
     display: flex;
     justify-content: space-around;
     background-color: #141D2F;
     padding: 1rem;
     border-radius: .8rem;
-    margin: 2rem 1.5rem 2rem 0;
+    margin: 2rem 1rem;
 }
 
 .miniContainer{

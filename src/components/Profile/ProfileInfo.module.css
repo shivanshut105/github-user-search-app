@@ -1,12 +1,12 @@
-.main-container{
+/* .main-container{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding-top: 2rem;
+    padding-top: 2rem; */
     /* padding: 2em; */
-}
+/* } */
 
-.bioData{
+/* .bioData{
     display: flex;
     flex-direction: column;
 }
@@ -17,14 +17,26 @@
 
 .date{
     font-size: 0.8em;
-    padding: 1em 2em;
+    padding: 1em 1.25em;
 }
 
 #username{
     color: #1a72d6;
 }
 
-#bio{
-    margin-top: .8rem;
-    font-size: 0.8em;
-}
+
+@media (max-width: 500px) {
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .date{
+        padding: 1em 0;
+        position: absolute;
+        left: 2em;
+        top: 13em;
+    }
+} */

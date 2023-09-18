@@ -3,12 +3,12 @@ import Profile from "../components/Profile/Profile";
 import SearchBar from "../components/SearchBar/SearchBar";
 import classes from "./Layout.module.css"
 
-const Layout = () => {
+const Layout = (props) => {
     return ( 
         <div className={classes.container}>
             <Header />
-            <SearchBar />
-            <Profile />
+            <SearchBar fetchData={props.fetchData} />
+            {props.userData && <Profile userData={props.userData}/>}
         </div>
      );
 }
