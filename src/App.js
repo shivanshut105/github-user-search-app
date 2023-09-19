@@ -2,6 +2,7 @@ import { useState } from 'react';
 import classes from './App.module.css';
 import Layout from './Layout/Layout';
 import { useSelector } from 'react-redux';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [userData, setUserData] = useState();
@@ -42,6 +43,7 @@ function App() {
   return (
     <div className={appClasses}>
       <Layout userData={userData} fetchData={fetchData} />
+      <Footer />
     </div>
   );
 }

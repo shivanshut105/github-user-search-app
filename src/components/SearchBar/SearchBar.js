@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import iconSvg from '../../assets/icons/icon-search.svg';
+import { ReactComponent as SearchSvg } from '../../assets/icons/icon-search.svg';
 import classes from "./SearchBar.module.css"
 import { useSelector } from 'react-redux';
 
@@ -14,13 +14,15 @@ const SearchBar = (props) => {
     }
 
     let searchBarClasses;
-    if(theme) searchBarClasses = classes.container + ' ' + classes.Light; 
-    else searchBarClasses = classes.container + ' ' + classes.Dark; 
+    if (theme) searchBarClasses = classes.container + ' ' + classes.Light;
+    else searchBarClasses = classes.container + ' ' + classes.Dark;
 
     return (
         <form onSubmit={submitHandler}>
             <div className={searchBarClasses}>
-                <img src={iconSvg} alt='search' />
+                <div id='svg'>
+                    <SearchSvg />
+                </div>
                 <input type="text"
                     ref={inputRef}
                     name="username"

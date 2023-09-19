@@ -15,10 +15,9 @@
     background-color: #1E2A47;
 }
 
-.container img{
-    height: 23px;
+#svg{
+    margin-right: 1em;
 }
-
 .container input{
     width: 80%;
     border: none;
