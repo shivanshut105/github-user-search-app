@@ -1,10 +1,18 @@
 .container{
-    background-color: #1E2A47;
     border-radius: 0.8em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: .5em;
+}
+
+.Light{
+    background-color: #FEFEFE;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+}
+
+.Dark{
+    background-color: #1E2A47;
 }
 
 .container img{
@@ -19,6 +27,8 @@
     font-size: 1.1em;
     color: white;
     font-family: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .Button{

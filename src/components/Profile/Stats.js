@@ -3,8 +3,10 @@ import {ReactComponent as LocationSvg} from '../../assets/icons/icon-location.sv
 import {ReactComponent as CompanySvg} from '../../assets/icons/icon-company.svg';
 import {ReactComponent as WebsiteSvg} from '../../assets/icons/icon-website.svg';
 import classes from './Stats.module.css';
+import { useSelector } from 'react-redux';
 
 const Stats = (props) => {
+    const theme = useSelector(state=>state.ui.mode);
     const notAvailableHandler = (value)=>{
         if(value) return <span>{value}</span>;
         else{
@@ -12,8 +14,11 @@ const Stats = (props) => {
         }
     }
     const user = props.userData;
+    let statsClasses;
+    if(theme) statsClasses = classes.wrapper + ' ' + classes.Light;
+    else statsClasses = classes.wrapper + ' ' + classes.Dark;
     return (
-        <div className={classes.wrapper}>
+        <div className={statsClasses}>
             <div className={classes.miniWrapper1}>
                 <div className={classes.cell}>
                     <LocationSvg className={classes.icon} />

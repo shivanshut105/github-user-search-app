@@ -4,7 +4,28 @@
     margin-top: 1.0667rem;
     padding: 2rem 1.6rem;
     border-radius: 15px;
+}
+
+.Light{
+    background-color: #FEFEFE;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);;
+    color: #4B6A9B;
+}
+
+.Dark{
     background-color: #1E2A47;
+}
+
+.LightRepo{
+    background-color: #eeeff4;
+}
+
+.LightRepo span{
+    color: black;
+}
+
+.DarkRepo{
+    background-color: #141C2B;
 }
 
 .user span {
@@ -16,6 +37,10 @@
     justify-content: space-between;
     /* display: grid;
     grid-template-columns: 50% 50%; */
+}
+
+.Info span{
+    margin-top: .5em;
 }
 
 .Info h2, h3, p{
@@ -49,7 +74,6 @@
     margin-top: 2em;
     padding: 1em;
     border-radius: 10px;
-    background-color: #141C2B;
 }
 
 .Repo div{

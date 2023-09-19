@@ -1,10 +1,13 @@
 import { useState } from 'react';
-import './App.css';
+import classes from './App.module.css';
 import Layout from './Layout/Layout';
+import { useSelector } from 'react-redux';
 
 function App() {
   const [userData, setUserData] = useState();
   const [flag, setFlag] = useState(true);
+
+  const theme = useSelector(state=>state.ui.mode);
 
   const getUser = async (username) => {
     const response = await fetch(`https://api.github.com/users/${username}`);
@@ -32,8 +35,12 @@ function App() {
       fetchData("octocat");
   }
 
+  let appClasses = classes.App;
+  if(theme) appClasses = appClasses + ' ' + classes.Light;
+  else appClasses = appClasses + ' ' + classes.Dark;
+
   return (
-    <div className="App">
+    <div className={appClasses}>
       <Layout userData={userData} fetchData={fetchData} />
     </div>
   );

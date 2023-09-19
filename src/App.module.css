@@ -5,6 +5,19 @@
   align-items: center;
 }
 
+.Light{
+  background-color: #e8eaf1;
+  color: #2B3442;
+}
+
+.Light h2{
+  color: #2B3442;
+}
+
+.Dark{
+  background-color: #141C2B;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

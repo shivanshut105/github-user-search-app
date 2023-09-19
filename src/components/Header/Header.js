@@ -1,12 +1,14 @@
-import { useState } from "react";
 import classes from './Header.module.css';
+import { useDispatch, useSelector } from "react-redux";
+import { uiActions } from "../../store";
 
 const Header = () => {
-    const [theme, setTheme] = useState(false);
+    // const [theme, setTheme] = useState(false);
+    const theme = useSelector(state => state.ui.mode);
+    const dispatch = useDispatch();
 
     const toggleThemeHandler = () => {
-        let currentTheme = theme;
-        setTheme(!currentTheme);
+        dispatch(uiActions.toggle());
     }
 
     return (

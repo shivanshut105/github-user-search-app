@@ -5,6 +5,16 @@
     margin-top: 2rem;
 }
 
+.Light{
+    background-color: #FEFEFE;
+    color: #4B6A9B;
+}
+
+.Dark{
+    background-color: #1E2A47;
+    color: white;
+}
+
 .miniWrapper1 {
     display: flex;
     flex-direction: column;
@@ -21,7 +31,7 @@
 .cell {
     display: flex;
     align-items: center;
-    color: white;
+    /* color: white; */
     margin: 0.5rem 1em;
 }
 

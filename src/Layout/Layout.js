@@ -1,3 +1,4 @@
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import Profile from "../components/Profile/Profile";
 import SearchBar from "../components/SearchBar/SearchBar";
@@ -9,6 +10,7 @@ const Layout = (props) => {
             <Header />
             <SearchBar fetchData={props.fetchData} />
             {props.userData && <Profile userData={props.userData}/>}
+            <Footer />
         </div>
      );
 }
