@@ -20,7 +20,7 @@ const SearchBar = (props) => {
     return (
         <form onSubmit={submitHandler}>
             <div className={searchBarClasses}>
-                <div id='svg'>
+                <div className={classes.svg}>
                     <SearchSvg />
                 </div>
                 <input type="text"

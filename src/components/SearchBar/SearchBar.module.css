@@ -15,9 +15,10 @@
     background-color: #1E2A47;
 }
 
-#svg{
-    margin-right: 1em;
+.svg{
+    padding: 10px 16px 4px 8px;
 }
+
 .container input{
     width: 80%;
     border: none;
