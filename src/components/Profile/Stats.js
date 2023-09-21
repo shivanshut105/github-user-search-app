@@ -8,7 +8,12 @@ import { useSelector } from 'react-redux';
 const Stats = (props) => {
     const theme = useSelector(state=>state.ui.mode);
     const notAvailableHandler = (value)=>{
-        if(value) return <span>{value}</span>;
+        if(value){
+            if(value.includes("https:")){
+                return <a style={{textDecoration: 'none', color:'inherit'}} href={value} target='_blank' rel="noreferrer">{value}</a>
+            }
+            return <span>{value}</span>;
+        }
         else{
             return <span style={{color: 'gray'}}>N/A</span>
         }
